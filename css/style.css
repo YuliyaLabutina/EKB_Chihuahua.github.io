@@ -251,11 +251,14 @@ body {
 .hero h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
   font-weight: normal;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 60px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero img {
