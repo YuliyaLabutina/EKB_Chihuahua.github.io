@@ -1,18 +1,18 @@
-body {
+@import url(mobile.css);
+ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #163152;
+   color: #163152;
   background-color: #E7E7DE;
-}
+  min-width: 320px;
+}   
 
 /* header */
 
 .page-header {
   margin-bottom: 10px;
 }
-
+@media(min-width:1000px){
 /* services */
 
 .services {
@@ -245,7 +245,6 @@ body {
 
 .hero {
   margin-bottom: 60px;
-
 }
 
 .hero h1 {
@@ -263,6 +262,8 @@ body {
 
 .hero img {
   display: block;
+  width: 1170px;
+height: 1034px;
 }
 
 
@@ -607,6 +608,10 @@ body {
 .social-item a:active {
   opacity: 0.3;
 }
+.map{
+  width: 700px;
+  height: 400px;
+}
 
 /* footer */
 
@@ -682,7 +687,9 @@ body {
 .footer-navigation-topic h2:active {
   color: rgba(22, 49, 82, 0.3);
 }
-
+.main-footer-content{
+  text-align: center;
+}
 
 /* Выделение активной кнопки */
 
@@ -695,14 +702,14 @@ body {
 
 .page.serif {
   font-family: "Philosopher", serif;
-}
+} 
 
 /* Theme: dark */
 
-.page.dark {
+ .page.dark {
   color: #fdfdff;
   background-color: #1d1f1f;
-}
+} 
 
 .page.dark .font-button-sans-serif {
   color: #fdfdff;
@@ -762,4 +769,5 @@ body {
 
 .page.dark .post-share {
   filter: brightness(20);
+}
 }
