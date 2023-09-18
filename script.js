@@ -41,6 +41,30 @@ moreButton.onclick=function(){
 }
 }*/
 
+//НАВИГАЦИЯ НА МОБИЛЬНОЙ ВЕРСИИ
+const gamberger = document.querySelector('.main-nav-toggle');
+const mainNav = document.querySelector('.main-nav')
+const menu = document.querySelector('.site-navigation')
+// gamberger.onclick=function(){
+//     mainNav.classList.remove('main-nav-closed')
+//     mainNav.classList.add('main-nav-opened')
+// }
+function interaction_nav(){
+    if (mainNav.classList.contains('main-nav-opened')){ 
+    mainNav.classList.remove('main-nav-opened');
+    mainNav.classList.add('main-nav-closed');
+    menu.classList.remove('opened');
+    menu.classList.add('closed')
+}
+else{ mainNav.classList.remove('main-nav-closed')
+    mainNav.classList.add('main-nav-opened')
+    menu.classList.add('opened');
+    menu.classList.remove('closed')
+}
+}
+gamberger.addEventListener('click',interaction_nav);
+
+
 //переключение раскладки карточек
 let cardButtonGrid=document.querySelector('.card-view-button-grid');
 let cardButtonList=document.querySelector('.card-view-button-list');

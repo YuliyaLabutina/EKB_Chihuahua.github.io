@@ -195,7 +195,9 @@
   padding: 20px 40px;
 }
 
-
+.main-nav-toggle{
+  display: none;
+}
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
