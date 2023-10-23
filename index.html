@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons-25c44dfdcfc816fe5a39b17fd3acdbc5(pr-cy.ru)/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicons-25c44dfdcfc816fe5a39b17fd3acdbc5(pr-cy.ru)/favicon-16x16.png" />
      <link href="css/style.css" rel="stylesheet"> 
+   
     <!-- <link href="css/mobile.css" rel="stylesheet"> -->
     <!-- <link rel="manifest" href="favicons-25c44dfdcfc816fe5a39b17fd3acdbc5(pr-cy.ru)/site.webmanifest" /> -->
 </head>
@@ -101,7 +102,7 @@
             </div>
             <p class="card-price">
               <span class="card-price-name">Цена:</span>
-              <span class="card-price-value">45 000 ₽</span>
+              <span class="card-price-value">35 000 ₽</span>
             </p>
           </li>
           <li class="card">
@@ -118,18 +119,24 @@
               <span class="card-price-value">20 000 ₽</span>
             </p>
           </li>
-           <!-- <li class="card">
-            <img class="card-img" src="img/photo-card-3.jpg" width="310" height="300" alt="Щенок №3">
+           <li class="card">
+            <button class="switch_photo left stop" onclick="button_Left()" >
+            </button>
+            <img class="card-img" id="switch_photos" src="img/pets23/four.jpeg" width="360" height="360" alt="Щенок №3">
             <div class="card-content">
-              <h3 class="card-title">Щенок №3</h3>
-              <p class="card-description">Пес поменьше. Описание</p>
-              
+              <h3 class="card-title">Девочки рыжие и бело-рыжие </h3>
+              <p class="card-description">У всех в 2 месяца будет клеймо и метрика щенка РКФ. Родились 15.09.2023 </p>
             </div>
             <p class="card-price">
               <span class="card-price-name">Цена:</span>
-              <span class="card-price-value">38 000 ₽/час</span>
+              <span class="card-price-value">35 000 ₽</span>
             </p>
-          </li>  -->
+          </div>
+        </div>
+      </div>
+              <button class="switch_photo right" onclick="button_Right()" >
+              </button>
+          </li> 
           </ul>
       </section> 
       <section class="gallery">
@@ -237,5 +244,6 @@
       <p class="main-footer-content"> Собака - друг человека!<br> Купить щенка породы чихуахуа в городе Екатеринбург с доставкой по всей России </p>
     </footer>
     <script src="script.js"> </script> 
+   
   </body>
 </html>

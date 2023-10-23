@@ -366,6 +366,7 @@ height: 1034px;
   width: 360px;
   padding: 30px;
   box-shadow: 0 4px 30px rgba(22, 49, 82, 0.12);
+  position: relative;
 }
 
 .card-img {
@@ -434,6 +435,32 @@ height: 1034px;
 }
 
 .cards.list .card-price-name {
+  display: none;
+}
+.switch_photo{
+ background: none;
+  background-image: url(/img/button.svg);
+  width: 50px;
+  height: 50px;
+  border: none; 
+  outline: none;
+  cursor: pointer;
+ 
+}
+
+.switch_photo.left{
+  position: absolute;
+  top:190px;
+  left: 5px;
+  transform: rotate(90deg);
+}
+.switch_photo.right{
+  position: absolute;
+  top:190px;
+  right: 5px;
+  transform: rotate(-90deg);
+}
+.stop{
   display: none;
 }
 

@@ -330,6 +330,7 @@
       padding: 20px;
       box-shadow: 0 4px 30px rgba(22, 49, 82, 0.12);
       margin-bottom: 30px;
+      position: relative;
 
     }
     .card-img {
@@ -404,6 +405,34 @@
     .cards.list .card-price-name {
       display: none;
     }
+
+    .switch_photo{
+      background: none;
+       background-image: url(/img/button.svg);
+       width: 100px;
+       height: 100px;
+       border: none; 
+       outline: none;
+       cursor: pointer;
+      
+     }
+     
+     .switch_photo.left{
+       position: absolute;
+       top:215px;
+       left: 160px;
+       transform: rotate(90deg);
+     }
+     .switch_photo.right{
+       position: absolute;
+       top:215px;
+       right: 160px;
+       transform: rotate(-90deg);
+     }
+     .stop{
+       display: none;
+     }
+     
     /* ГАЛЛЕРЕЯ */
     
     .gallery h2{

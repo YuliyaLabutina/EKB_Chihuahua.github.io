@@ -95,3 +95,32 @@ activeImage.onclick=function(evt){
 currentActive.classList.remove('active-item')
 activeImage.classList.add('active-item')
 }}
+
+// переключение картинок 
+const img_Array = ['img/pets23/four.jpeg', 'img/pets23/two.jpeg', 'img/pets23/three.jpeg',  'img/pets23/five.jpeg','img/pets23/six.jpeg']
+const buttonLeft = document.querySelector('.switch_photo.left')
+const buttonRight = document.querySelector('.switch_photo.right')
+const image = document.getElementById("switch_photos");
+
+let index = 1;
+function button_Right() {
+    if (index === img_Array.length-1){
+   buttonRight.classList.add('stop')
+ buttonLeft.classList.remove('stop')
+        console.log(index)
+        num = img_Array.length - 2;
+    }
+    image.src = img_Array[index++]
+}
+
+let num=img_Array.length-2;
+
+function button_Left() {
+    if(num===0){ 
+        buttonRight.classList.remove('stop')
+        buttonLeft.classList.add('stop')
+        index=1;
+    }
+    image.src = img_Array[num--]
+    console.log(index)
+}
