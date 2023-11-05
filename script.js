@@ -97,7 +97,9 @@ activeImage.classList.add('active-item')
 }}
 
 // переключение картинок 
-const img_Array = ['img/pets23/four.jpeg', 'img/pets23/two.jpeg', 'img/pets23/three.jpeg',  'img/pets23/five.jpeg','img/pets23/six.jpeg']
+const img_Array = ['img/pets23/four.jpeg', 'img/pets23/two.jpeg', 'img/pets23/three.jpeg',
+//  'img/pets23/WhatsApp Image 2023-11-03 at 13.36.11 (1).jpeg','img/pets23/WhatsApp Image 2023-11-03 at 13.36.11.jpeg'
+]
 const buttonLeft = document.querySelector('.switch_photo.left')
 const buttonRight = document.querySelector('.switch_photo.right')
 const image = document.getElementById("switch_photos");
