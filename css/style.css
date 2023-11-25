@@ -265,16 +265,12 @@
   align-items: center;
 }
 
-.hero img {
-  display: block;
- width: 1700px;
- height: auto;
- margin: 0 auto;
- 
+.image_hero-div{
+display: flex;
+justify-content: center;
 }
 .image_hero{
-  width: 100%;
-  height: auto;
+width: 100%;
 }
 
 
