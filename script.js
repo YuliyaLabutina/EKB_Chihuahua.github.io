@@ -31,24 +31,13 @@ sansSerifFontButton.onclick = function(){
     sansSerifFontButton.classList.add('active') 
 }
 
-//разворачиваем статьи
-//нашли коллекцию со статьями
-/*let blogArticles=document.querySelectorAll('.blog-article');
-for(let blogArticle of blogArticles ){
-    let moreButton=blogArticle.querySelector('.more')
-moreButton.onclick=function(){
-   blogArticle.classList.remove('short') 
-}
-}*/
+
 
 //НАВИГАЦИЯ НА МОБИЛЬНОЙ ВЕРСИИ
 const gamberger = document.querySelector('.main-nav-toggle');
 const mainNav = document.querySelector('.main-nav')
 const menu = document.querySelector('.site-navigation')
-// gamberger.onclick=function(){
-//     mainNav.classList.remove('main-nav-closed')
-//     mainNav.classList.add('main-nav-opened')
-// }
+
 function interaction_nav(){
     if (mainNav.classList.contains('main-nav-opened')){ 
     mainNav.classList.remove('main-nav-opened');
@@ -64,24 +53,6 @@ else{ mainNav.classList.remove('main-nav-closed')
 }
 gamberger.addEventListener('click',interaction_nav);
 
-
-//переключение раскладки карточек
-let cardButtonGrid=document.querySelector('.card-view-button-grid');
-let cardButtonList=document.querySelector('.card-view-button-list');
-let cardsList=document.querySelector('.cards');
-
-cardButtonList.onclick=function(){
-    cardsList.classList.add('list')
-cardButtonGrid.classList.remove('active')
-cardButtonList.classList.add('active')
-}
-
-cardButtonGrid.onclick=function(){
-    cardsList.classList.remove('list')
-    cardButtonGrid.classList.add('active')
-    cardButtonList.classList.remove('active')  
-}
-
 //галлерея
 let activePhoto=document.querySelector('.active-photo')
 
@@ -96,33 +67,3 @@ currentActive.classList.remove('active-item')
 activeImage.classList.add('active-item')
 }}
 
-// переключение картинок 
-const img_Array = ['img/pets23/four.jpeg', 'img/pets23/two.jpeg', 'img/pets23/three.jpeg',
-//  'img/pets23/WhatsApp Image 2023-11-03 at 13.36.11 (1).jpeg','img/pets23/WhatsApp Image 2023-11-03 at 13.36.11.jpeg'
-]
-const buttonLeft = document.querySelector('.switch_photo.left')
-const buttonRight = document.querySelector('.switch_photo.right')
-const image = document.getElementById("switch_photos");
-
-let index = 1;
-function button_Right() {
-    if (index === img_Array.length-1){
-   buttonRight.classList.add('stop')
- buttonLeft.classList.remove('stop')
-        console.log(index)
-        num = img_Array.length - 2;
-    }
-    image.src = img_Array[index++]
-}
-
-let num=img_Array.length-2;
-
-function button_Left() {
-    if(num===0){ 
-        buttonRight.classList.remove('stop')
-        buttonLeft.classList.add('stop')
-        index=1;
-    }
-    image.src = img_Array[num--]
-    console.log(index)
-}
