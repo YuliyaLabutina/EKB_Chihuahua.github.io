@@ -3,8 +3,6 @@
   .services {
     padding-top: 15px;
     padding-bottom: 10px;
-  }
-  .services-content {
     margin: 0 auto;
     padding: 0px 20px;
     font-size: 35px;
@@ -14,6 +12,7 @@
     align-items: center;
     text-transform: uppercase;
   }
+
 
   .location {
     padding-top: 15px;
